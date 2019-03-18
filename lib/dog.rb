@@ -15,5 +15,7 @@ class Dog
     DB[:conn].execute("DROP TABLE IF EXISTS dogs")
   end
   
-  def
+  def save
+    
+  end
 end
