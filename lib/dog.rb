@@ -32,6 +32,6 @@ class Dog
   def self.find_by_id(dog_id)
     sql = "SELECT * FROM dogs WHERE id = ?"
     result = DB[:conn].execute(sql, dog_id)
-    
+    Dog.new()
   end
 end
