@@ -16,6 +16,6 @@ class Dog
   end
   
   def save
-    self
+    sql = "INSERT INTO dogs"
   end
 end
