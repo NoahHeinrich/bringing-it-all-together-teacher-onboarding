@@ -47,7 +47,7 @@ class Dog
   end
   
   def self.new_from_db(row)
-    dog = Dog.new(id: row[0],name: row[1], breed: row[3])
+    dog = Dog.new(id: row[0],name: row[1], breed: row[2])
     sql = "INSERT INTO dogs (name,breed,id)
     VALUES(?,?,?)"
     result = DB[:conn].execute(sql,row[1],row[2],row[0])
