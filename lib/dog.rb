@@ -44,6 +44,7 @@ class Dog
     else
       Dog.create(name: name, breed: breed)
     end
-       
   end
+  
+  def sel
 end
