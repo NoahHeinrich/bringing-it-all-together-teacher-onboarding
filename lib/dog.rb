@@ -53,4 +53,8 @@ class Dog
     result = DB[:conn].execute(sql,row[1],row[2],row[0])
     dog
   end
+  
+  def self.find_by_name(dog_name)
+    
+  end
 end
