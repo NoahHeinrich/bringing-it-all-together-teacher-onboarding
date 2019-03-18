@@ -34,4 +34,7 @@ class Dog
     result = DB[:conn].execute(sql, dog_id)
     Dog.new(name: result[0][1], breed: result[0][2], id: result[0][0])
   end
+  
+  def self.find_or_creste_by(name:,breed:)
+  end
 end
