@@ -19,7 +19,7 @@ class Dog
     sql = "INSERT INTO dogs (name,breed)
     VALUES(?,?)"
     DB[:conn].execute(sql,self.name,self.breed)
-    result = DB[:conn].exc\ecute("SELECT last_insert_rowid() FROM dogs")
+    result = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")
     @id = result[0][0]
     self
   end
