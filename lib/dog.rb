@@ -47,6 +47,6 @@ class Dog
   end
   
   def self.new_from_db(row)
-    sql = 
+    sql = "SELECT * FROM dogs WHERE ROWNUM ="
   end
 end
