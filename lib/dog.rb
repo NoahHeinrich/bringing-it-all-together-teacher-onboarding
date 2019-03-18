@@ -51,6 +51,6 @@ class Dog
     sql = "INSERT INTO dogs (name,breed,id)
     VALUES(?,?,?)"
     result = DB[:conn].execute(sql,row[1],row[2],row[0])
-    
+    dog
   end
 end
