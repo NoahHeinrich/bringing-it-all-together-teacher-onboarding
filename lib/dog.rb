@@ -60,4 +60,7 @@ class Dog
     result = DB[:conn].execute(sql, dog_name)
     Dog.new(name: result[0][1], breed: result[0][2], id: result[0][0])
   end
+  
+  def update
+  end
 end
