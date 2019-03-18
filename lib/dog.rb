@@ -23,4 +23,7 @@ class Dog
     @id = result[0][0]
     self
   end
+  
+  def self.create
+  end
 end
