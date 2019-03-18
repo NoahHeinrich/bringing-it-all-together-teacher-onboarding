@@ -24,8 +24,8 @@ class Dog
     self
   end
   
-  def self.create(hash)
-    dog = Dog.new(name = :name,breed = :breed)
+  def self.create(name:, breed:)
+    dog = Dog.new(name: name,breed: breed)
     dog.save
   end
 end
