@@ -39,6 +39,10 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ? AND breed = ?"
     result = DB[:conn].execute(sql,name,breed)
     if result
-      Dog
+      Dog.new(name: result[0][1], breed: result[0][2], id: result[0][0])
+    else
+      Dog.create(name: name, breed: breed)
+    end
+       
   end
 end
