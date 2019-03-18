@@ -47,7 +47,7 @@ class Dog
   end
   
   def self.new_from_db(row)
-    sql = "SELECT * FROM dogs WHERE id = ?"
+    sql = "SELECT * FROM dogs WHERE ROWNUM = ?"
     result = DB[:conn].execute(sql,row)
     Dog.new(name: result[0][1], breed: result[0][2], id: result[0][0])
   end
